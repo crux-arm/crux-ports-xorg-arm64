@@ -1,0 +1,19 @@
+# Description: xorg proto xf86dgaproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+
+name=xorg-xf86dgaproto
+version=2.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/xf86dgaproto-$version.tar.bz2)
+
+build() {
+  cd xf86dgaproto-$version
+
+  ./configure --prefix=/usr \
+              --build=aarch64-unknown-linux-gnueabi
+
+  make
+  make DESTDIR=$PKG install
+}
