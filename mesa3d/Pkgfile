@@ -1,6 +1,7 @@
 # Description: Mesa 3D Graphics Library
 # URL: http://www.mesa3d.org
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto xorg-libxxf86vm
 # Optional: nettle
 
