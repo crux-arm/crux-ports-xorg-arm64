@@ -6,9 +6,9 @@
 # Optional: nettle
 
 name=mesa3d
-version=11.2.2
+version=17.1.4
 release=1
-source=(ftp://ftp.freedesktop.org/pub/mesa/$version/mesa-$version.tar.xz)
+source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
 build() {
   cd mesa-$version
