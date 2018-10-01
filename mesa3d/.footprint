@@ -75,9 +75,9 @@ lrwxrwxrwx	root/root	usr/lib/libglapi.so -> libglapi.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so.0 -> libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxatracker.la
-lrwxrwxrwx	root/root	usr/lib/libxatracker.so -> libxatracker.so.2.3.0
-lrwxrwxrwx	root/root	usr/lib/libxatracker.so.2 -> libxatracker.so.2.3.0
--rwxr-xr-x	root/root	usr/lib/libxatracker.so.2.3.0
+lrwxrwxrwx	root/root	usr/lib/libxatracker.so -> libxatracker.so.2.4.0
+lrwxrwxrwx	root/root	usr/lib/libxatracker.so.2 -> libxatracker.so.2.4.0
+-rwxr-xr-x	root/root	usr/lib/libxatracker.so.2.4.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/dri.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/egl.pc
