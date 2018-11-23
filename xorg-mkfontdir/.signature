@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/xorg-arm64.pub
+RWQK42WfXMUBTLbtPksRA8V7Tc1PNRbSOBV7xjAmfrzl64+3H7Xu16B864ALi56umbsnkKlqWPGh2bFJwL/UxwQ30doXvthyfQ0=
+SHA256 (Pkgfile) = 968619ce9a1c27da0ed0445a5bc067060b1bed319dd817055cfd6e73ebc92100
+SHA256 (.footprint) = 60ee4c6ebdd899dd9e3ba31e3a2e523ed46ab8915e1ee67e179bbb258beca091
+SHA256 (mkfontdir-1.0.7.tar.bz2) = 56d52a482df130484e51fd066d1b6eda7c2c02ddbc91fe6e2be1b9c4e7306530

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/xorg-arm64.pub
+RWQK42WfXMUBTDTX6hRXZsqSz7rNtS38dLmrElZi3ni0Y+Li3h1aHeTRiEQeltPu+lA73DFjhHlS2PlhgI/bxxREo/9QR1PoZAA=
+SHA256 (Pkgfile) = 93e699668517e08c7c8d5d91b20e4495fd84511fe1eeb911ffac221fcf570a8d
+SHA256 (.footprint) = 5aa17ddc202fd871cbd63299e895970f0d2c1b3ad615efa27f3c5a69ea48588d
+SHA256 (mtdev-1.1.5.tar.gz) = a662924dd09cf538c8df66514da345e40c3cbfa880cc7262bc3b55ee46d0c1f4
