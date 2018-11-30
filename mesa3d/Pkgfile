@@ -5,7 +5,7 @@
 # Depends on: elfutils libdrm libvdpau llvm xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm python-mako
 
 name=mesa3d
-version=18.2.5
+version=18.2.6
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
