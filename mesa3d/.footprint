@@ -1,5 +1,3 @@
-drwxr-xr-x	root/root	etc/
--rw-r--r--	root/root	etc/drirc
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/EGL/
@@ -87,3 +85,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/glesv2.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/osmesa.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xatracker.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/drirc.d/
+-rw-r--r--	root/root	usr/share/drirc.d/00-mesa-defaults.conf
