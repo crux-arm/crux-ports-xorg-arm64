@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/xorg-arm64.pub
-RWQK42WfXMUBTIW/6/Ez9h9kKuB3Pgq1ssXcEdEJwjfr09AHW1vPtnuYeBW3THrZf7adNPq9QIgVeaJtg7AiZErpVUkbFqefbQA=
-SHA256 (Pkgfile) = dfd2e847c59f609217c36563848eec3d1c39a65b8fa0ec8dc878dc5f9937d235
+RWQK42WfXMUBTGEpeSWPckCExdbV+tmdMak1lCj3SQw/iGMUSb5b4NFWUrUJb3SP9EC90q3GgLWxMOz02Q+zTydKNK/dG9OB3wk=
+SHA256 (Pkgfile) = 99d1a20b9ed40adf2d93b8e9ad9c6acd5cac711ae474c2e7285894afc3f8e4c4
 SHA256 (.footprint) = 5dea3b77c6c5c70b31ceddfcd61f3eca5534206c02055b3bea0cb71e3a5bc9b7
-SHA256 (libXcomposite-0.4.4.tar.bz2) = ede250cd207d8bee4a338265c3007d7a68d5aca791b6ac41af18e9a2aeb34178
+SHA256 (libXcomposite-0.4.5.tar.bz2) = b3218a2c15bab8035d16810df5b8251ffc7132ff3aa70651a1fba0bfe9634e8f
