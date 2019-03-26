@@ -6,7 +6,7 @@
 
 name=xorg-libxcomposite
 version=0.4.5
-release=2
+release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXcomposite-$version.tar.bz2)
 
 build() {
