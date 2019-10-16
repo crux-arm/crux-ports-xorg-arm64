@@ -22,7 +22,7 @@ build() {
               -Dgallium-xa=true \
               -Dshared-llvm=true \
               -Dplatforms=x11,drm \
-              -Dgallium-drivers=swrast,freedreno,lima \
+              -Dgallium-drivers=swrast,freedreno,lima,kmsro \
               -Dglvnd=true  
 
 
