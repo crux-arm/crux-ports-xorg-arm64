@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/xorg-arm64.pub
+RWQK42WfXMUBTGsLDDEDnGU113K6BZHvmUO8G0FYjK147iLClX73BByQdPdTP47sdjElSQQdYtrgNf7eLaE+FfKujAjUnQYQbws=
+SHA256 (Pkgfile) = 8ee21e598e2e3fd9b2cb2484b8a0f8956099bb6e73a7b88adaaa80a12b7afee8
+SHA256 (.footprint) = 093a45edba35a21f9a81b64d0a85f14b3ab7ca44d1d893e762d585be0de25aae
+SHA256 (mesa-19.2.1.tar.xz) = 4cc53ca1a8d12c6ff0e5ea44a5213c05c88447ab50d7e28bb350cd29199f01e9
