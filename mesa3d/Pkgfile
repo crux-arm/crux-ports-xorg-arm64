@@ -6,7 +6,7 @@
 
 name=mesa3d
 version=19.2.1
-release=1
+release=2
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
 build() {
