@@ -82,9 +82,7 @@ lrwxrwxrwx	root/root	usr/lib/libxatracker.so.2 -> libxatracker.so.2.5.0
 -rwxr-xr-x	root/root	usr/lib/libxatracker.so.2.5.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/dri.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/egl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gbm.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/gl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/osmesa.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xatracker.pc
 drwxr-xr-x	root/root	usr/share/
