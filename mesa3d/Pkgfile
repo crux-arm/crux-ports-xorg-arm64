@@ -5,7 +5,7 @@
 # Depends on: elfutils libdrm libglvnd libvdpau llvm python3-mako xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
 
 name=mesa3d
-version=19.2.3
+version=19.2.6
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -22,7 +22,7 @@ build() {
               -Dgallium-xa=true \
               -Dshared-llvm=true \
               -Dplatforms=x11,drm \
-              -Dgallium-drivers=swrast,freedreno,lima,kmsro \
+              -Dgallium-drivers=swrast,freedreno,lima,kmsro,vc4,v3d \
               -Dglvnd=true  
 
 
