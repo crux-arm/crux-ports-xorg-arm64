@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: xorg-compositeproto xorg-libxext xorg-libxfixes
+# Depends on: xorg-libxext xorg-libxfixes
 
 name=xorg-libxcomposite
 version=0.4.5
