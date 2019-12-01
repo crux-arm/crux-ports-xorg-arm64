@@ -34,6 +34,8 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/stm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/sun4i-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/swrast_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/v3d_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/vc4_dri.so
 lrwxrwxrwx	root/root	usr/lib/libEGL_mesa.so -> libEGL_mesa.so.0
 lrwxrwxrwx	root/root	usr/lib/libEGL_mesa.so.0 -> libEGL_mesa.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libEGL_mesa.so.0.0.0
