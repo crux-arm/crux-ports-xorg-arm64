@@ -5,7 +5,7 @@
 # Depends on: libpthread-stubs xorg-libpciaccess 
 
 name=libdrm
-version=2.4.103
+version=2.4.104
 release=1
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.xz)
 
@@ -22,9 +22,9 @@ meson build \
   -Dnouveau=false \
   -Dvmwgfx=false \
   -Damdgpu=false \
-  -Domap-experimental-api=true \
-  -Dexynos-experimental-api=true \
-  -Dtegra-experimental-api=true
+  -Domap=true \
+  -Dexynos=true \
+  -Dtegra=true
 
   DESTDIR=$PKG ninja -C build -j ${JOBS:-1} install
 }
