@@ -18,12 +18,14 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/hx8357d_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/ili9225_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/ili9341_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/imx-dcss_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/imx-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/ingenic-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/kgsl_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/kms_swrast_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/lima_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mcde_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/mediatek_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/meson_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mi0283qt_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/msm_dri.so
@@ -54,6 +56,7 @@ lrwxrwxrwx	root/root	usr/lib/libgbm.so.1 -> libgbm.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so -> libglapi.so.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so.0 -> libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libglapi.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libvulkan_lvp.so
 lrwxrwxrwx	root/root	usr/lib/libxatracker.so -> libxatracker.so.2
 lrwxrwxrwx	root/root	usr/lib/libxatracker.so.2 -> libxatracker.so.2.5.0
 -rwxr-xr-x	root/root	usr/lib/libxatracker.so.2.5.0
@@ -68,3 +71,6 @@ drwxr-xr-x	root/root	usr/share/drirc.d/
 drwxr-xr-x	root/root	usr/share/glvnd/
 drwxr-xr-x	root/root	usr/share/glvnd/egl_vendor.d/
 -rw-r--r--	root/root	usr/share/glvnd/egl_vendor.d/50_mesa.json
+drwxr-xr-x	root/root	usr/share/vulkan/
+drwxr-xr-x	root/root	usr/share/vulkan/icd.d/
+-rw-r--r--	root/root	usr/share/vulkan/icd.d/lvp_icd.aarch64.json
