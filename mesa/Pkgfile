@@ -6,7 +6,7 @@
 # Optional: libva
 
 name=mesa
-version=20.3.5
+version=21.0.3
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -20,7 +20,7 @@ build() {
               -Dgbm=true \
               -Dgles1=true \
               -Dgles2=true \
-              -Dosmesa=gallium \
+              -Dosmesa=true \
               -Dgallium-xa=true \
               -Dshared-llvm=true \
               -Dplatforms=x11 \
