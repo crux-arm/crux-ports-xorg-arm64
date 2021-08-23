@@ -24,6 +24,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/kgsl_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/kms_swrast_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/lima_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/mali-dp_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mcde_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mediatek_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/meson_dri.so
