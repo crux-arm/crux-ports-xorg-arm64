@@ -12,20 +12,35 @@ source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
 build() {
 
+  prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
+  PKGMK_MESA_PLATFORMS+=',x11'
+
+  patch -Np1 -d mesa-$version -i $SRC/0001-Rip-out-VC4-forced-NEON.patch || true
+
   meson setup build mesa-$version \
-              --prefix=/usr \
-              --sysconfdir=/etc \
-              --buildtype=plain \
-              -Dllvm=true \
-              -Dgbm=true \
-              -Dgles1=true \
-              -Dgles2=true \
-              -Dosmesa=true \
-              -Dgallium-xa=true \
-              -Dshared-llvm=true \
-              -Dplatforms=x11 \
-              -Dgallium-drivers=swrast,freedreno,lima,kmsro,vc4,v3d \
-              -Dglvnd=true  
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=false \
+    -D b_pie=false \
+    -D b_pch=false \
+    -D llvm=enabled \
+    -D shared-llvm=enabled \
+    -D platforms=${PKGMK_MESA_PLATFORMS#,} \
+    -D osmesa=true \
+    -D gallium-drivers=swrast,vc4,v3d \
+    -D gallium-xa=false \
+    -D gallium-xvmc=false \
+    -D shared-glapi=true \
+    -D dri-drivers="" \
+    -D dri3=enabled \
+    -D gbm=enabled \
+    -D gles1=disabled \
+    -D gles2=enabled \
+    -D glvnd=true \
+    -D glx=dri \
+    -D egl=enabled
 
   meson compile -C build -j ${JOBS:-1}
   DESTDIR=$PKG meson install -C build

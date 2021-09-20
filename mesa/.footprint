@@ -8,9 +8,6 @@ drwxr-xr-x	root/root	usr/include/GL/internal/
 -rw-r--r--	root/root	usr/include/GL/internal/dri_interface.h
 -rw-r--r--	root/root	usr/include/GL/osmesa.h
 -rw-r--r--	root/root	usr/include/gbm.h
--rw-r--r--	root/root	usr/include/xa_composite.h
--rw-r--r--	root/root	usr/include/xa_context.h
--rw-r--r--	root/root	usr/include/xa_tracker.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/armada-drm_dri.so
@@ -21,15 +18,12 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/imx-dcss_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/imx-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/ingenic-drm_dri.so
--rwxr-xr-x	root/root	usr/lib/dri/kgsl_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/kms_swrast_dri.so
--rwxr-xr-x	root/root	usr/lib/dri/lima_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mali-dp_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mcde_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mediatek_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/meson_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mi0283qt_dri.so
--rwxr-xr-x	root/root	usr/lib/dri/msm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mxsfb-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/pl111_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/repaper_dri.so
@@ -58,14 +52,10 @@ lrwxrwxrwx	root/root	usr/lib/libglapi.so -> libglapi.so.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so.0 -> libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libvulkan_lvp.so
-lrwxrwxrwx	root/root	usr/lib/libxatracker.so -> libxatracker.so.2
-lrwxrwxrwx	root/root	usr/lib/libxatracker.so.2 -> libxatracker.so.2.5.0
--rwxr-xr-x	root/root	usr/lib/libxatracker.so.2.5.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/dri.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gbm.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/osmesa.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/xatracker.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/drirc.d/
 -rw-r--r--	root/root	usr/share/drirc.d/00-mesa-defaults.conf
