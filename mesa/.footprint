@@ -20,6 +20,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/ingenic-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/kirin_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/kms_swrast_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/komeda_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mali-dp_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mcde_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mediatek_dri.so
@@ -27,6 +28,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/mi0283qt_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mxsfb-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/pl111_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/rcar-du_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/repaper_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/rockchip_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/st7586_dri.so
