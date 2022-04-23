@@ -6,8 +6,8 @@
 # Optional: libva
 
 name=mesa
-version=22.0.1
-release=1
+version=22.0.2
+release=2
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
 build() {
