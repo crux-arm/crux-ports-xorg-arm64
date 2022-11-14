@@ -5,7 +5,7 @@
 # Depends on: libpthread-stubs xorg-libpciaccess 
 
 name=libdrm
-version=2.4.112
+version=2.4.114
 release=1
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.xz)
 
@@ -14,17 +14,19 @@ build() {
 
 meson build \
   --prefix=/usr \
-  -Dman-pages=false \
-  -Dvalgrind=false \
-  -Dcairo-tests=false \
-  -Dintel=false \
-  -Dradeon=false \
-  -Dnouveau=false \
-  -Dvmwgfx=false \
-  -Damdgpu=false \
-  -Domap=true \
-  -Dexynos=true \
-  -Dtegra=true
+  -Dman-pages=disabled \
+  -Dvalgrind=disabled \
+  -Dcairo-tests=disabled \
+  -Db_lto=true \
+  -Db_pie=true \
+  -Dintel=disabled \
+  -Dradeon=disabled \
+  -Dnouveau=disabled \
+  -Dvmwgfx=disabled \
+  -Damdgpu=disabled \
+  -Domap=enabled \
+  -Dexynos=enabled \
+  -Dtegra=enabled
 
   DESTDIR=$PKG ninja -C build -j ${JOBS:-1} install
 }
