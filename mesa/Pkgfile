@@ -6,7 +6,7 @@
 # Optional: libva
 
 name=mesa
-version=22.1.7
+version=22.2.3
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -14,8 +14,6 @@ build() {
 
   prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
   PKGMK_MESA_PLATFORMS+=',x11'
-
-  patch -Np1 -d mesa-$version -i $SRC/0001-Rip-out-VC4-forced-NEON.patch || true
 
   meson setup build mesa-$version \
     --prefix=/usr \
