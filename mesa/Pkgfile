@@ -6,7 +6,7 @@
 # Optional: libva
 
 name=mesa
-version=22.2.5
+version=22.3.1
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -29,7 +29,6 @@ build() {
     -D osmesa=true \
     -D gallium-drivers=swrast,vc4,v3d \
     -D gallium-xa=false \
-    -D gallium-xvmc=false \
     -D shared-glapi=true \
     -D dri-drivers="" \
     -D dri3=enabled \
