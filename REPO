@@ -9,8 +9,8 @@ f:197f24e2431f47667e013f3b36c408d0:xorg-font-alias/.footprint
 f:7abc9e0bb1a65d5673f039f004e10131:mesa/.signature
 f:65beaf1d316a5996abd1b87a5a0e3808:mesa/Pkgfile
 f:e8653e2d0da8fb7b0cbdf99b76951379:mesa/.footprint
-f:f49222b715d781d793624e57b5b4cd95:libdrm/.signature
-f:8865e3ebe0fd2b949fa4691bda2d971b:libdrm/Pkgfile
+f:6fb63b327c4dcb6335c390bc95aa75e1:libdrm/.signature
+f:e3b0ee31eca662f55c8ebf76006f3bf7:libdrm/Pkgfile
 f:c9498fa9cc2aaa9386becc26012b05ec:libdrm/.footprint
 f:fb04706f2a3b06b93083247f8611967e:xorg-font-misc-misc/.signature
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
