@@ -6,7 +6,7 @@
 # Optional: libva
 
 name=mesa
-version=23.0.3
+version=23.1.1
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -28,9 +28,8 @@ build() {
     -D platforms=${PKGMK_MESA_PLATFORMS#,} \
     -D osmesa=true \
     -D gallium-drivers=swrast,vc4,v3d \
-    -D gallium-xa=false \
-    -D shared-glapi=true \
-    -D dri-drivers="" \
+    -D gallium-xa=disabled \
+    -D shared-glapi=enabled \
     -D dri3=enabled \
     -D gbm=enabled \
     -D gles1=disabled \
