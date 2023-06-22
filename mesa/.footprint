@@ -28,6 +28,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/meson_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mi0283qt_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mxsfb-drm_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/panfrost_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/pl111_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/rcar-du_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/repaper_dri.so

@@ -27,7 +27,7 @@ build() {
     -D shared-llvm=enabled \
     -D platforms=${PKGMK_MESA_PLATFORMS#,} \
     -D osmesa=true \
-    -D gallium-drivers=swrast,vc4,v3d \
+    -D gallium-drivers=swrast,vc4,v3d,panfrost \
     -D gallium-xa=disabled \
     -D shared-glapi=enabled \
     -D dri3=enabled \
