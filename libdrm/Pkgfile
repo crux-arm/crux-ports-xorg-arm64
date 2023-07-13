@@ -22,7 +22,7 @@ meson build \
   -Dintel=disabled \
   -Dradeon=disabled \
   -Dnouveau=disabled \
-  -Dvmwgfx=disabled \
+  -Dvmwgfx=enabled \
   -Damdgpu=disabled \
   -Domap=enabled \
   -Dexynos=enabled \
