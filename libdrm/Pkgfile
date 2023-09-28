@@ -6,7 +6,7 @@
 
 name=libdrm
 version=2.4.116
-release=1
+release=2
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.xz)
 
 build() {
@@ -16,6 +16,10 @@ build() {
     --wrap-mode nodownload \
     -D b_lto=true \
     -D b_pie=true \
+    -D vmwgfx=enabled \
+    -D omap=enabled \
+    -D exynos=enabled \
+    -D tegra=enabled \
     -D man-pages=disabled \
     -D valgrind=disabled \
     -D cairo-tests=disabled
