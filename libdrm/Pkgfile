@@ -1,32 +1,29 @@
 # Description: Userspace interface to kernel DRM services
-# URL: http://dri.freedesktop.org/
+# URL: https://dri.freedesktop.org/
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: libpthread-stubs xorg-libpciaccess 
+# Depends on: libpthread-stubs xorg-libpciaccess
 
 name=libdrm
 version=2.4.116
-release=1
+release=2
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.xz)
 
 build() {
-	cd $name-$version
+  meson setup build $name-$version \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true \
+    -D vmwgfx=enabled \
+    -D omap=enabled \
+    -D exynos=enabled \
+    -D tegra=enabled \
+    -D man-pages=disabled \
+    -D valgrind=disabled \
+    -D cairo-tests=disabled
 
-meson build \
-  --prefix=/usr \
-  -Dman-pages=disabled \
-  -Dvalgrind=disabled \
-  -Dcairo-tests=disabled \
-  -Db_lto=true \
-  -Db_pie=true \
-  -Dintel=disabled \
-  -Dradeon=disabled \
-  -Dnouveau=disabled \
-  -Dvmwgfx=enabled \
-  -Damdgpu=disabled \
-  -Domap=enabled \
-  -Dexynos=enabled \
-  -Dtegra=enabled
-
-  DESTDIR=$PKG ninja -C build -j ${JOBS:-1} install
+  meson compile -C build -j ${JOBS:-1}
+  DESTDIR=$PKG meson install -C build
 }
