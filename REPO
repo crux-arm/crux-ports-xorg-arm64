@@ -17,4 +17,5 @@ f:fb04706f2a3b06b93083247f8611967e:xorg-font-misc-misc/.signature
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
 f:5f60cd35a6c077df42446f08ed28f177:xorg-font-misc-misc/post-install
 f:d620ed560584f9a8b46b0ddd3ef0c482:mesa/.footprint
+f:22aad5758a1e50a253187267a8b27305:mesa/.signature
 f:5db4c87e70ebfea9580124d78e6caa10:mesa/Pkgfile
