@@ -16,6 +16,7 @@ f:34340f27c34fc16fecdeed6f1346eb7e:xorg-font-misc-misc/.footprint
 f:fb04706f2a3b06b93083247f8611967e:xorg-font-misc-misc/.signature
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
 f:5f60cd35a6c077df42446f08ed28f177:xorg-font-misc-misc/post-install
-f:d620ed560584f9a8b46b0ddd3ef0c482:mesa/.footprint
+f:4ba88383de957c2d1ed51d3904fd2994:mesa/.footprint
+f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
 f:22aad5758a1e50a253187267a8b27305:mesa/.signature
-f:5db4c87e70ebfea9580124d78e6caa10:mesa/Pkgfile
+f:997dda63ea4418be8791de4740047bc3:mesa/Pkgfile
