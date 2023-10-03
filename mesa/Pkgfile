@@ -2,26 +2,33 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, at crux-arm devel dot nu
-# Depends on: elfutils glslang libdrm libglvnd llvm python3-mako xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
-# Optional: directx-headers libva libvdpau wayland-protocols vulkan-loader
+# Depends on: elfutils libdrm libglvnd llvm python3-mako xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
+# Optional: directx-headers glslang libunwind libva libvdpau lm_sensors vulkan-loader wayland-protocols
 
 name=mesa
-version=23.1.8
+version=23.2.1
 release=1
-source=(https://archive.mesa3d.org/$name-$version.tar.xz)
+source=(https://archive.mesa3d.org/$name-$version.tar.xz
+  U_clover-llvm-move-to-modern-pass-manager.patch)
 
 build() {
   prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
+  prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,intel-nullhw,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+  prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
   prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
   prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
-  prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
+  prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
   prt-get isinst vulkan-loader && PKGMK_MESA_GALLIUM+='zink,'
-
+  prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
+  ## for future references
   #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
   PKGMK_MESA_PLATFORMS+=',x11'
 
-  sed '/Scalar.h/d;/Utils.h/d' \
-    -i mesa-$version/src/gallium/auxiliary/gallivm/lp_bld_init.c
+  # https://build.opensuse.org/package/show/openSUSE:Factory/Mesa
+  patch -Np1 -d $name-$version -i $SRC/U_clover-llvm-move-to-modern-pass-manager.patch
+
+  #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
+  PKGMK_MESA_PLATFORMS+=',x11'
 
   meson setup build mesa-$version $PKGMK_MESA \
     --prefix=/usr \
@@ -44,8 +51,6 @@ build() {
     -D gallium-drivers=${PKGMK_MESA_GALLIUM}etnaviv,kmsro,lima,panfrost,svga,v3d,vc4,nouveau,r300,r600,radeonsi,swrast,virgl \
     -D platforms=${PKGMK_MESA_PLATFORMS#,} \
     -D shared-glapi=enabled \
-    -D vulkan-drivers=amd,swrast,broadcom,panfrost,virtio-experimental \
-    -D vulkan-layers=device-select,overlay \
     -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
     -D glvnd=true
 
