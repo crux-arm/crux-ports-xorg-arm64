@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/raspberrypi3-arm.pub
-RWROOThsoDo5hDnlNT93/71g2ckXZIITDdMDumtawNlhdQwpSzdPWaBIgSS2Uyemp5WXg/ANASw7iwP6/janrZAPJnTCVAG8/Qg=
+untrusted comment: verify with /etc/ports/xorg-arm64.pub
+RWQK42WfXMUBTC9r0JmbU4XV7db5dV2z1BXPaWcgRunXl9E1bzCmYNGm2NqBwTTptj/enhiZjRObb0nskZZ37aJA/10qre/bZQQ=
 SHA256 (Pkgfile) = c9582af95168ad940cb8b7ce6562ff70c9929653c6a47e2a547fab7cdb5e3d07
 SHA256 (.footprint) = 3096f39f08308f9089191d37b322e4fc2bcee42c7d94f6392e704690708974e1
 SHA256 (libdrm-2.4.118.tar.xz) = a777bd85f2b5fc9c57f886c82058300578317cafdbc77d0a769d7e9a9567ab88
