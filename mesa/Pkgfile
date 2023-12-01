@@ -6,10 +6,9 @@
 # Optional: directx-headers glslang libunwind libva libvdpau lm_sensors vulkan-loader wayland-protocols
 
 name=mesa
-version=23.2.1
+version=23.3.0
 release=1
-source=(https://archive.mesa3d.org/$name-$version.tar.xz
-  U_clover-llvm-move-to-modern-pass-manager.patch)
+source=(https://archive.mesa3d.org/$name-$version.tar.xz)
 
 build() {
   prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
@@ -23,9 +22,6 @@ build() {
   ## for future references
   #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
   PKGMK_MESA_PLATFORMS+=',x11'
-
-  # https://build.opensuse.org/package/show/openSUSE:Factory/Mesa
-  patch -Np1 -d $name-$version -i $SRC/U_clover-llvm-move-to-modern-pass-manager.patch
 
   #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
   PKGMK_MESA_PLATFORMS+=',x11'

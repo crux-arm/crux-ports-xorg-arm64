@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/armada-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/etnaviv_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/exynos_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/hdlcd_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/hx8357d_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/ili9225_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/ili9341_dri.so
