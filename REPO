@@ -6,10 +6,9 @@ d:libdrm
 f:7f3078fdf238b8b24b79d102e5b4cb9b:mtdev/.signature
 f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
 f:9f30eabb8aeeaa9dcbaad76c3dd6c21e:mtdev/Pkgfile
-f:16741a3a0a9f28d4ae64564b3f1a7cd6:mesa/.signature
-f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
-f:4ba88383de957c2d1ed51d3904fd2994:mesa/.footprint
-f:997dda63ea4418be8791de4740047bc3:mesa/Pkgfile
+f:22690fb30638d93149681623b88ed832:mesa/.signature
+f:50a86e48e505f85fccae275c0085ab02:mesa/.footprint
+f:62018c52f6306b632bb7137f8692c8cf:mesa/Pkgfile
 f:fb04706f2a3b06b93083247f8611967e:xorg-font-misc-misc/.signature
 f:34340f27c34fc16fecdeed6f1346eb7e:xorg-font-misc-misc/.footprint
 f:5f60cd35a6c077df42446f08ed28f177:xorg-font-misc-misc/post-install
