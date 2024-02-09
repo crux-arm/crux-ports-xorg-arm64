@@ -6,7 +6,7 @@
 # Optional: directx-headers glslang libunwind libva libvdpau lm_sensors vulkan-loader wayland-protocols
 
 name=mesa
-version=23.3.4
+version=23.3.5
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz)
 
