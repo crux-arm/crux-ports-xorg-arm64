@@ -10,8 +10,8 @@ f:3ca422ba04d026607212799abfc87c29:libdrm/.footprint
 f:2930a463bd57cf4865949550f6c29521:libdrm/Pkgfile
 f:41f7dc72441e4e742df22fc40fe9b208:libdrm/.signature
 f:a1f5a3462a30c4e3fdd5e1b76411b145:mesa/.footprint
-f:bb6816ea8496d82fcf382adc4131c5a6:mesa/Pkgfile
-f:04d7488687255f9c4cf309b35ca0387c:mesa/.signature
+f:0288980b641c5d938fce1100f8295a43:mesa/Pkgfile
+f:c03e5a985e7321378d7ce1300a8aeb45:mesa/.signature
 f:197f24e2431f47667e013f3b36c408d0:xorg-font-alias/.footprint
 f:6db73f0a58003166579faae5d3cd272e:xorg-font-alias/Pkgfile
 f:8dd705304fedccf881d9c8d037f9e42c:xorg-font-alias/.signature
