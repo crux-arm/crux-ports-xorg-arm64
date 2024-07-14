@@ -6,16 +6,20 @@
 # Optional: directx-headers glslang libunwind libva libvdpau lm_sensors vulkan-loader wayland-protocols
 
 name=mesa
-version=24.1.0
+version=24.1.3
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz)
 
 build() {
+
   prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
-  prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,intel-nullhw,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+  prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
+  prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
+  prt-get isinst glslang python3-ply && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,intel-nullhw,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+  prt-get isinst libclc && PKGMK_MESA_GALLIUM+='iris,'
   prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
   prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
-  prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
+#  prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
   prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
   prt-get isinst vulkan-loader && PKGMK_MESA_GALLIUM+='zink,'
   prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
@@ -23,14 +27,10 @@ build() {
   #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
   PKGMK_MESA_PLATFORMS+=',x11'
 
-  #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
-  PKGMK_MESA_PLATFORMS+=',x11'
-
   meson setup build mesa-$version $PKGMK_MESA \
     --prefix=/usr \
     --sysconfdir=/etc \
     --buildtype=plain \
-    --wrap-mode nodownload \
     -D b_lto=false \
     -D b_pie=false \
     -D b_pch=false \
@@ -48,7 +48,7 @@ build() {
     -D platforms=${PKGMK_MESA_PLATFORMS#,} \
     -D shared-glapi=enabled \
     -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
-    -D glvnd=true
+    -D glvnd=enabled
 
   meson compile -C build -j ${JOBS:-1}
   DESTDIR=$PKG meson install -C build
