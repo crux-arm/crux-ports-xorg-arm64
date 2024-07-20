@@ -5,8 +5,8 @@ d:libdrm
 f:6db73f0a58003166579faae5d3cd272e:xorg-font-alias/Pkgfile
 f:8dd705304fedccf881d9c8d037f9e42c:xorg-font-alias/.signature
 f:197f24e2431f47667e013f3b36c408d0:xorg-font-alias/.footprint
-f:890c4526adc25f178fa779c8eda1d40b:mesa/Pkgfile
-f:a0f94062d8793ae52388d4be9177f778:mesa/.signature
+f:0d2be42e64fac8310d3caa99980a7cb5:mesa/Pkgfile
+f:46241412a7508e58e66581801deeaee9:mesa/.signature
 f:02061e3125bbd970a0acc0bf3c28fc11:mesa/.footprint
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
 f:fb04706f2a3b06b93083247f8611967e:xorg-font-misc-misc/.signature
