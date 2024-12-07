@@ -12,6 +12,6 @@ f:6db73f0a58003166579faae5d3cd272e:xorg-font-alias/Pkgfile
 f:a944c7615130179f4e60ad7b65a015b3:libdrm/.footprint
 f:a886eac45e0773e09272241bc16d470c:libdrm/.signature
 f:8da308656a39006816da01ab87e4347b:libdrm/Pkgfile
-f:ba4089e3ab27df38c51dc1bfcbf7908f:mesa/.footprint
-f:c28fe00fb3c51b9ce6f5304cdcc2d09a:mesa/.signature
-f:1cbbee56fc587bbb135d4aa0538727c3:mesa/Pkgfile
+f:844acec552ea8072104d3ed84fb7c780:mesa/.footprint
+f:2b075ea177aadcafe0fe343473d5380e:mesa/.signature
+f:28d00e8d9020478ecf93d39f79d27e19:mesa/Pkgfile
