@@ -7,8 +7,11 @@
 
 name=mesa
 version=24.3.1
-release=1
-source=(https://archive.mesa3d.org/$name-$version.tar.xz)
+release=2
+source=(https://archive.mesa3d.org/$name-$version.tar.xz
+  0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
+  0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
+  0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch)
 
 build() {
 
@@ -28,6 +31,10 @@ build() {
   PKGMK_MESA_PLATFORMS+=',x11'
 
   printf '%s' "$version-$release" > $name-$version/VERSION
+
+  patch -Np1 -d $name-$version -i $SRC/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
+  patch -Np1 -d $name-$version -i $SRC/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
+  patch -Np1 -d $name-$version -i $SRC/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
 
   meson setup build mesa-$version $PKGMK_MESA \
     --prefix=/usr \

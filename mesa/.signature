@@ -1,5 +1,8 @@
 untrusted comment: verify with /etc/ports/xorg-arm64.pub
-RWQK42WfXMUBTKYWw+XuHM8cqCxFjGz7pQcn5eDKJegfyNCeBKPbAzv1RFekzEc6NtIUaslS5jl6ZXPmT8+tbokEHQBipQVXOws=
-SHA256 (Pkgfile) = bdd06f027287e9dfb81242991130400806d4cb12522105daaf36fae5804faa83
-SHA256 (.footprint) = 54c4124c1b0284dd621c8e7ec6f927c4f4b94c75acd33543e6ed54b63237c1d5
+RWQK42WfXMUBTItEqS7ObQlGaLiopufovDlMuqiuQKFJCUaMNK1/9KkdnRXmK3eag5Na46G3vmTCq5/AoUYvmpeSXmyeKEcHkgE=
+SHA256 (Pkgfile) = 29e4f39d841625d51c142b4b4428e2417969c7ca25bcc74bb837ae79b675279b
+SHA256 (.footprint) = 82b886b17f12623743936552687443a004493d34b9a80224d2631dac6cb34dc5
 SHA256 (mesa-24.3.1.tar.xz) = 9c795900449ce5bc7c526ba0ab3532a22c3c951cab7e0dd9de5fcac41b0843af
+SHA256 (0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch) = 2c20fee505be9a1f08546b63457b8378b0f1fcff58e60c03378b7de0a87a1e81
+SHA256 (0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch) = a58e6d0631da6dd077530136bb44f0233cd279fc75e3b65b495ec90be16db91a
+SHA256 (0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch) = 606acb4073f46c7ca7edec96b6af06619642f3bbcd6afab2c57bff26266b917f
