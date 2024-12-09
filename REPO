@@ -12,6 +12,9 @@ f:6db73f0a58003166579faae5d3cd272e:xorg-font-alias/Pkgfile
 f:a944c7615130179f4e60ad7b65a015b3:libdrm/.footprint
 f:a886eac45e0773e09272241bc16d470c:libdrm/.signature
 f:8da308656a39006816da01ab87e4347b:libdrm/Pkgfile
-f:844acec552ea8072104d3ed84fb7c780:mesa/.footprint
-f:2b075ea177aadcafe0fe343473d5380e:mesa/.signature
-f:28d00e8d9020478ecf93d39f79d27e19:mesa/Pkgfile
+f:9a083a5756fcb2a6145bd8e32e1031e4:mesa/.footprint
+f:b66e57a8cfbdf8132cbc97349de9a150:mesa/.signature
+f:7e1080546c514670fc44bf6998185490:mesa/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
+f:da7e1e7e73f1fadfbecc73e3ae772670:mesa/Pkgfile
+f:c9e9413519fc1715942c928ec8b19460:mesa/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
+f:cf566dbb30c12b56c27e3b4ea3513037:mesa/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
