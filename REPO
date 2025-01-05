@@ -13,7 +13,7 @@ f:cf566dbb30c12b56c27e3b4ea3513037:mesa/0003-egl-wayland-fallback-to-implicit-mo
 f:a5c2d9ae934b568624758f1f52926765:mesa/.footprint
 f:2b3b7d702f7995696c15365a34098e35:mesa/Pkgfile
 f:c9e9413519fc1715942c928ec8b19460:mesa/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
-f:6e56edd251936019fdb8b8e4ef1c8f9c:mesa/.signature
+f:61fdc852029f1ad029f1b6c96d2c899d:mesa/.signature
 f:5f60cd35a6c077df42446f08ed28f177:xorg-font-misc-misc/post-install
 f:34340f27c34fc16fecdeed6f1346eb7e:xorg-font-misc-misc/.footprint
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
