@@ -2,7 +2,7 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, at crux-arm devel dot nu
-# Depends on: elfutils libdrm libglvnd llvm python3-mako python3-pyyaml xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
+# Depends on: elfutils libdrm libglvnd llvm python3-mako python3-pycparser python3-pyyaml xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
 # Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
