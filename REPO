@@ -1,5 +1,6 @@
 d:xorg-font-alias
 d:xorg-font-misc-misc
+d:xorg
 d:mesa
 d:libdrm
 f:197f24e2431f47667e013f3b36c408d0:xorg-font-alias/.footprint
@@ -9,6 +10,9 @@ f:34340f27c34fc16fecdeed6f1346eb7e:xorg-font-misc-misc/.footprint
 f:fb04706f2a3b06b93083247f8611967e:xorg-font-misc-misc/.signature
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
 f:5f60cd35a6c077df42446f08ed28f177:xorg-font-misc-misc/post-install
+f:ee14f7215a09f4a1f4335d8b18c1e559:xorg/.footprint
+f:a8c06956f3d7113a6c123a383175fb5a:xorg/.signature
+f:406395eb9ad22861fd8cdf3cddc84ad8:xorg/Pkgfile
 f:968a78452623d4e5d66e8b02c44a28e3:mesa/.footprint
 f:d3e546a4e9affd7b91229d5346ea1890:mesa/.signature
 f:75157f5da19b38a226adb51f0360b3ed:mesa/Pkgfile
