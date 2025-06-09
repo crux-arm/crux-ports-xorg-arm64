@@ -6,9 +6,9 @@ d:xorg-font-misc-misc
 f:197f24e2431f47667e013f3b36c408d0:xorg-font-alias/.footprint
 f:6db73f0a58003166579faae5d3cd272e:xorg-font-alias/Pkgfile
 f:8dd705304fedccf881d9c8d037f9e42c:xorg-font-alias/.signature
-f:b85ed977789518d87cb5065447ff6cb7:mesa/.footprint
-f:2e516b6196e7d34b91ec43e8d30e4b95:mesa/Pkgfile
-f:44a03eeba3e8c6f27024b1c635ed14cc:mesa/.signature
+f:695bac67167d2233392dc733bac76fe6:mesa/.footprint
+f:5bc89a0ddbad42d6379d6e9c1c6293d3:mesa/Pkgfile
+f:bdb852d6ba887ad1e13410faab8b10e5:mesa/.signature
 f:ee14f7215a09f4a1f4335d8b18c1e559:xorg/.footprint
 f:406395eb9ad22861fd8cdf3cddc84ad8:xorg/Pkgfile
 f:a8c06956f3d7113a6c123a383175fb5a:xorg/.signature
