@@ -12,9 +12,9 @@ f:bdb852d6ba887ad1e13410faab8b10e5:mesa/.signature
 f:ee14f7215a09f4a1f4335d8b18c1e559:xorg/.footprint
 f:406395eb9ad22861fd8cdf3cddc84ad8:xorg/Pkgfile
 f:a8c06956f3d7113a6c123a383175fb5a:xorg/.signature
-f:a944c7615130179f4e60ad7b65a015b3:libdrm/.footprint
-f:8da308656a39006816da01ab87e4347b:libdrm/Pkgfile
-f:a886eac45e0773e09272241bc16d470c:libdrm/.signature
+f:bb5495dc9658090c7b2b334752ed1121:libdrm/.footprint
+f:708ca6ee7b01bfa35e9fd6dc2d0ca311:libdrm/Pkgfile
+f:97f7cea25c040271897f226b5003ee4f:libdrm/.signature
 f:34340f27c34fc16fecdeed6f1346eb7e:xorg-font-misc-misc/.footprint
 f:5f60cd35a6c077df42446f08ed28f177:xorg-font-misc-misc/post-install
 f:ea93a38cc4ddd3f2e916fda8ef9c6d09:xorg-font-misc-misc/Pkgfile
